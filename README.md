@@ -2,26 +2,54 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 
-## Development server
+# CLI para criar estrutura do projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```shell
+ ng g m core
+ CREATE src/app/core/core.module.ts (190 bytes)
+```
+```shell
+ ng g m shared
+ CREATE src/app/shared/shared.module.ts (192 bytes)
+```
+```shell
+ ng g m characters --routing
+ CREATE src/app/characters/characters-routing.module.ts (253 bytes)
+ CREATE src/app/characters/characters.module.ts (296 bytes)
+ ```
+ ```shell
+ ng g c characters/characters-list
+ CREATE src/app/characters/characters-list/characters-list.component.css (0 bytes)
+ CREATE src/app/characters/characters-list/characters-list.component.spec.ts (616 bytes)
+ CREATE src/app/characters/characters-list/characters-list.component.ts (237 bytes)
+ UPDATE src/app/characters/characters.module.ts (414 bytes)
+```
+```shell
+ ng g c characters/characters-detail
+ CREATE src/app/characters/characters-detail/characters-detail.component.css (0 bytes)
+CREATE src/app/characters/characters-detail/characters-detail.component.html (32 bytes)
+CREATE src/app/characters/characters-detail/characters-detail.component.spec.ts (630 bytes)
+CREATE src/app/characters/characters-detail/characters-detail.component.ts (245 bytes)
+UPDATE src/app/characters/characters.module.ts (538 bytes)
+```
+```shell
+ ng g m spells --routing  
+ CREATE src/app/spells/spells-routing.module.ts (249 bytes)
+ CREATE src/app/spells/spells.module.ts (280 bytes)
+```
+```shell
+ ng g c spells/spells-list  
+ CREATE src/app/spells/spells-list/spells-list.component.css (0 bytes)
+ CREATE src/app/spells/spells-list/spells-list.component.html (26 bytes)
+ CREATE src/app/spells/spells-list/spells-list.component.spec.ts (588 bytes)
+ CREATE src/app/spells/spells-list/spells-list.component.ts (221 bytes)
+ UPDATE src/app/spells/spells.module.ts (382 bytes)
+```
+```shell
+ ng g c spells/spells-detail
+ CREATE src/app/spells/spells-detail/spells-detail.component.css (0 bytes)
+ CREATE src/app/spells/spells-detail/spells-detail.component.html (28 bytes)
+ CREATE src/app/spells/spells-detail/spells-detail.component.spec.ts (602 bytes)
+ CREATE src/app/spells/spells-detail/spells-detail.component.ts (229 bytes)
+ UPDATE src/app/spells/spells.module.ts (490 bytes)
+```
