@@ -100,3 +100,19 @@ To github.com:ipog-goias/spa-harry-potter.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'
 ```
+
+## Criando camada de serviço (service)
+
+### Service spells
+
+```shell
+ng g s spells/spells       
+CREATE src/app/spells/spells.service.spec.ts (357 bytes)
+CREATE src/app/spells/spells.service.ts (135 bytes)
+```
+### Service characters
+```shell
+ng g s characters/characters
+CREATE src/app/characters/characters.service.spec.ts (377 bytes)
+CREATE src/app/characters/characters.service.ts (139 bytes)
+```
