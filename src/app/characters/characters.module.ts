@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { CharactersRoutingModule } from './characters-routing.module';
 import { CharactersListComponent } from './characters-list/characters-list.component';
@@ -13,7 +14,8 @@ import { CharactersDetailComponent } from './characters-detail/characters-detail
   ],
   imports: [
     CommonModule,
-    CharactersRoutingModule
+    CharactersRoutingModule,
+    HttpClientModule
   ]
 })
 export class CharactersModule { }

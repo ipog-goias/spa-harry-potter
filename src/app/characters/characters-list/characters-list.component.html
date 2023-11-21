@@ -1,1 +1,6 @@
 <p>characters-list works!</p>
+<h1>Lista de dados da API characters</h1>
+<div *ngFor="let item of character">
+    {{ item.name }}
+    <img [src]="item.image" />
+  </div>

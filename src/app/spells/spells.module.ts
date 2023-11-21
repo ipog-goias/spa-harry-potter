@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { SpellsRoutingModule } from './spells-routing.module';
 import { SpellsListComponent } from './spells-list/spells-list.component';
@@ -13,7 +14,8 @@ import { SpellsDetailComponent } from './spells-detail/spells-detail.component';
   ],
   imports: [
     CommonModule,
-    SpellsRoutingModule
+    SpellsRoutingModule,
+    HttpClientModule
   ]
 })
 export class SpellsModule { }
